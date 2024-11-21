@@ -1,34 +1,50 @@
-#String-using-all-methods
+Team 1
 
-Team 1 Creating String Data Structure Using all Methods
-Objective
-The project aims to develop a detailed and versatile implementation of a string data structure in Python, featuring all common and essential string manipulation methods. It will help users understand the internal workings of string operations and provide a foundation for more complex text-based applications.
+Creating String Data Structure Using all Methods
 
-🎉 String Operations GUI with Tkinter
-Welcome to the String Playground! 🎢 A Python GUI where your strings come to life! With a sleek Tkinter interface, you can play around with strings like a magician—reverse them, check if they’re palindromes, split them into pieces, and much more. 🚀
+String Data Structure 
 
-✨ Features
-🪄 String Transformation
+A string is a sequence of characters stored in contiguous memory locations. In custom implementations, the goal is to provide functionality similar to those in standard libraries, such as string creation, modification, concatenation, comparison, and more.
 
-Turn lowercase to UPPERCASE and vice versa.
-Reverse the string like magic! 🌀
-🔍 String Exploration
+Structure of the Custom String Class
 
-Check if it’s a palindrome (Hint: Was it a car or a cat I saw?).
-Find hidden substrings like a detective. 🕵️
-🛠️ String Modification
+1. Attributes:
 
-Replace words or remove spaces.
-Split strings into chunks or glue them back together.
-Outcome
-Created an interactive GUI application using Python's Tkinter library for performing various string operations.
+Data: A dynamic array or fixed-size array to store the string characters.
+Size: The current length of the string.
+Capacity (Optional): Total allocated memory, useful for dynamic resizing.
 
-The application includes the following key features:
-String Manipulations:
-Convert strings to uppercase and lowercase. Reverse a string. Check if the string is a palindrome.
+Methods
 
-Substring Operations:
-Find substrings and their positions. Replace substrings with user-defined replacements.
+1. Basic Operations
+   
+Constructor: Initializes the string object with an empty or predefined value.
+Destructor: Frees allocated memory to prevent leaks.
+Length: Returns the length of the string.
 
-Advanced Operations:
-Split a string using a custom delimiter. Join multiple strings with a user-defined joiner.
+2. Access Methods
+   
+Get Character (Indexing):Access a character at a specific index.
+char charAt(int index) const;
+Set Character:Modify the character at a specific index.
+
+3. Manipulation
+
+Concatenation:Combine two strings and return a new string.
+Insert:Add a substring at a specific position.
+Erase/Delete:Remove characters from a specific range.
+Replace:Replace a substring with another.
+Substring:Extract a part of the string.
+
+4. Utility Functions
+
+Comparison:Compare two strings lexicographically.
+Search:Find a character or substring within the string.
+Reverse:Reverse the string in place.
+
+5. Advanced Features
+
+Dynamic Resizing:Handle memory allocation and resizing for large strings.
+Case Conversion:Convert the string to uppercase or lowercase.
+Trim:Remove whitespace from the beginning or end of the string.
+Split:Divide the string into tokens based on a delimiter.
